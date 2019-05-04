@@ -3,10 +3,10 @@
 A Python wrapper for the Kuveyt Turk API!
 ======
 
-[![Build Status](http://img.shields.io/travis/kuveytturk/kuveytturk/master.svg?style=flat)](https://travis-ci.org/kuveytturk/kuveyttur)
+[![Build Status](http://img.shields.io/travis/iuysal/kuveytturk/master.svg?style=flat)](https://travis-ci.org/iuysal/kuveytturk)
 [![Version](http://img.shields.io/pypi/v/kuveytturk.svg?style=flat)](https://pypi.python.org/pypi/kuveytturk)
 
-This library provides a Python interface for the [Kuveyt Turk API](https://developer.kuveytturk.com.tr/#/). Making a request to Kuveyt Turk API requires a valid access token and
+This library provides a Python interface for the [Kuveyt Turk API](https://developer.kuveytturk.com.tr/#/). Making a request to Kuveyt Turk API requires a valid access token and signature. OAuth procedures are eased and signature generation is automated in this library.
 
 Installation
 ------------
