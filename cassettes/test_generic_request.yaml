@@ -1,0 +1,78 @@
+interactions:
+- request:
+    body: grant_type=client_credentials&client_id=1841ad4636424438b639dbfe3554dc6a&client_secret=5Qg4zXdMAvar%2BW81Xx%2F%2BUw8A6TCXSPP74myjftu4zP6hNj%2FEPaXhDg%3D%3D&scope=public
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '168'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.21.0
+    method: POST
+    uri: https://idprep.kuveytturk.com.tr/api/connect/token
+  response:
+    body:
+      string: '{"access_token":"4083b5f9870991d9c8fa4bf9f8b26a3d74ea22e5478a3541df3690af2cb51457","expires_in":3600,"token_type":"Bearer"}'
+    headers:
+      Cache-Control:
+      - no-store, no-cache, max-age=0
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 04 May 2019 14:04:33 GMT
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - NSC_WT-JE-Qsfq=ffffffffaf1c195945525d5f4f58455e445a4a42378b;expires=Sat, 04-May-2019
+        14:24:34 GMT;path=/;secure;httponly
+      - TS01891b1d=01334097cb8950c84d1c27198fe8cedb8a6f77e255a924e3f6ba5fa71294985724989433bbe7628c9d4aee1543ed2fdde7e68012a6577995233d4a662030cb2fd25cb1416b;
+        Path=/; Secure; HTTPOnly
+      Strict-Transport-Security:
+      - max-age=15552000
+      Transfer-Encoding:
+      - chunked
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json
+      Signature:
+      - !!binary |
+        S0xnemRBMlZXWkRuOU5SekZsaHl6QjIzeHk0Q0ZTbGdLdFljd1BObHJ1cThxS2JqQzNXcGhjbGdE
+        ZkFsQVF5TjdmV0U4WGdRRnlPN0U5bFAxQU90cENzZjlSaTZiOVJhT211MlYrSmFpUGZHSFU5dTky
+        K3V0Qmh0VTVOaHBzdVA0N0d3QXlwcjBnSnF6RHVLWm9pTDBFUGtNY2ovZnJONG1WaFZQcEZ1czJN
+        PQ==
+    method: GET
+    uri: https://apitest.kuveytturk.com.tr/prep/v1/data/testcustomers
+  response:
+    body:
+      string: '{"value":[77898,78768,106037,135017,145187],"success":true,"results":[]}'
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 04 May 2019 14:04:35 GMT
+      Set-Cookie:
+      - TS01dea925=01334097cb01aae77ad6099854851dece397f77be2693a23db18b163235d74bb1660d0a191b6a4405813d4a095a44e6abf93a9ed64;
+        Path=/; Secure; HTTPOnly
+      Strict-Transport-Security:
+      - max-age=15552000
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+version: 1

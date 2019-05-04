@@ -1,0 +1,79 @@
+interactions:
+- request:
+    body: grant_type=client_credentials&client_id=1841ad4636424438b639dbfe3554dc6a&client_secret=5Qg4zXdMAvar%2BW81Xx%2F%2BUw8A6TCXSPP74myjftu4zP6hNj%2FEPaXhDg%3D%3D&scope=loans
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '167'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.21.0
+    method: POST
+    uri: https://idprep.kuveytturk.com.tr/api/connect/token
+  response:
+    body:
+      string: '{"access_token":"f59dda3e534e69a810afdf486c3d8e78d14aec74818c5a4a0c3abc46477f3527","expires_in":3600,"token_type":"Bearer"}'
+    headers:
+      Cache-Control:
+      - no-store, no-cache, max-age=0
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 04 May 2019 14:04:33 GMT
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - NSC_WT-JE-Qsfq=ffffffffaf1c195d45525d5f4f58455e445a4a42378b;expires=Sat, 04-May-2019
+        14:24:33 GMT;path=/;secure;httponly
+      - TS01891b1d=01334097cb08ab6685b2bb2f56a6dbaf7d919df59b6d895ea4eea36d6bb4410b23a3e650b5b7882fe2f852679640b0fca901328114ffd73a713108bfb2bb45faa94767934a;
+        Path=/; Secure; HTTPOnly
+      Strict-Transport-Security:
+      - max-age=15552000
+      Transfer-Encoding:
+      - chunked
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"accountNumber": 8002577, "accountSuffix": 1, "processId": 421553, "isPTTCollection":
+      "false"}'
+    headers:
+      Content-Length:
+      - '95'
+      Content-Type:
+      - application/json
+      Signature:
+      - !!binary |
+        ZjZGazZPd0h6TTZNWlNTK2xYWlpSNmhNSU9JNHJIZ3VvcFc2c1lVOUpCUTNUT2tQaDRXd2ZKTlgy
+        WmFXSEtsSTVnTnRpYmxaMGtvODlhTTloWWNHalRRVlZ0ZXk3emIwNHNpNUNtNllSczJqa1k5VHBp
+        N2ZqNFF4a1JZOEJvVVI4dTFQQzdWeGJxTCtBZVAwUjh2bXdpS2xmcjBsMjRlK0xMTVVyZE92cW5v
+        PQ==
+    method: POST
+    uri: https://apitest.kuveytturk.com.tr/prep/v1/collections
+  response:
+    body:
+      string: '{"value":[{"InstallmentType":1,"ProcessId":421578,"InstallmentTypeName":"Proje","ProjectAccountNumber":8002577,"ProjectAccountSuffix":300,"ProjectBranchId":221,"MaturityDate":"2018-03-22T00:00:00","InstallmentAmount":1038,"DebtFEC":0,"IsLeasing":false,"CustomerMainState":0},{"InstallmentType":1,"ProcessId":421579,"InstallmentTypeName":"Proje","ProjectAccountNumber":8002577,"ProjectAccountSuffix":300,"ProjectBranchId":221,"MaturityDate":"2018-04-24T00:00:00","InstallmentAmount":1037.05,"DebtFEC":0,"IsLeasing":false,"CustomerMainState":0}],"results":[],"success":true,"isMockResponse":true}'
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 04 May 2019 14:04:34 GMT
+      Set-Cookie:
+      - TS01dea925=01334097cb703d6a7a3fb77d46c23478ea15e52dd6a89cd842948e3f51e53997287bce3532d0132706d3095b607094cc1aaceadbe9;
+        Path=/; Secure; HTTPOnly
+      Strict-Transport-Security:
+      - max-age=15552000
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,413 @@
+interactions:
+- request:
+    body: grant_type=client_credentials&client_id=1841ad4636424438b639dbfe3554dc6a&client_secret=5Qg4zXdMAvar%2BW81Xx%2F%2BUw8A6TCXSPP74myjftu4zP6hNj%2FEPaXhDg%3D%3D&scope=public
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '168'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.21.0
+    method: POST
+    uri: https://idprep.kuveytturk.com.tr/api/connect/token
+  response:
+    body:
+      string: '{"access_token":"5d085c70e3e4c5b6724b9d3edb8c917c423f29fb5e9db39a5b3fb9d2b35883f5","expires_in":3600,"token_type":"Bearer"}'
+    headers:
+      Cache-Control:
+      - no-store, no-cache, max-age=0
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 04 May 2019 14:04:30 GMT
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - NSC_WT-JE-Qsfq=ffffffffaf1c195945525d5f4f58455e445a4a42378b;expires=Sat, 04-May-2019
+        14:24:30 GMT;path=/;secure;httponly
+      - TS01891b1d=01334097cb1e9563c8952cf9539bca282419d3e470f3c1d1036f3828172a16458c375f25f09ae9035dd96b87e035c2cb0f6f159d6dfdf1cc3ecc3d7e1331fbf77b012f7871;
+        Path=/; Secure; HTTPOnly
+      Strict-Transport-Security:
+      - max-age=15552000
+      Transfer-Encoding:
+      - chunked
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"bankId": 205, "cityId": 34}'
+    headers:
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/json
+      Signature:
+      - !!binary |
+        SnZhcVJJRzA5Z3h0TUQzVVZCT3o2VmNrTmZUSmREcVpWdi94V3lyWVFwbHRVaUt3NFp1MlBLVlBy
+        S0dVVU92UEpwQVMxamFFS3pMZzVZQWducURaQW5OT1FIN1QxZ1JWck42dFpaWkFoTlVucktzRzJW
+        UHkrZ2NNaGJmVkc1aTFzWVJ1c2U2Q2gzUUdlOCtWZm9pZno5UWF1a082OG1lQmFmWHN3eUtLNmo4
+        PQ==
+    method: GET
+    uri: https://apitest.kuveytturk.com.tr/prep/v1/data/banks/205/branches?cityId=34
+  response:
+    body:
+      string: "{\"value\":[{\"branchId\":387,\"name\":\"50. YIL / \u0130STANBUL\"\
+        },{\"branchId\":382,\"name\":\"ACIBADEM / \u0130STANBUL\"},{\"branchId\":352,\"\
+        name\":\"AHMED YESEV\u0130 / \u0130STANBUL\"},{\"branchId\":416,\"name\":\"\
+        AKSARAY METRO / \u0130STANBUL\"},{\"branchId\":361,\"name\":\"AL\u0130BEYK\xD6\
+        Y / \u0130STANBUL\"},{\"branchId\":147,\"name\":\"ALTINTEPE / \u0130STANBUL\"\
+        },{\"branchId\":54,\"name\":\"ALTUN\u0130ZADE / \u0130STANBUL\"},{\"branchId\"\
+        :322,\"name\":\"ARNAVUTK\xD6Y / \u0130STANBUL\"},{\"branchId\":321,\"name\"\
+        :\"ATAKENT / \u0130STANBUL\"},{\"branchId\":297,\"name\":\"ATI\u015EALANI\
+        \ / \u0130STANBUL\"},{\"branchId\":77,\"name\":\"AVCILAR / \u0130STANBUL\"\
+        },{\"branchId\":46,\"name\":\"BA\u011ECILAR / \u0130STANBUL\"},{\"branchId\"\
+        :62,\"name\":\"BAHCEL\u0130EVLER / \u0130STANBUL\"},{\"branchId\":132,\"name\"\
+        :\"BAH\xC7E\u015EEH\u0130R / \u0130STANBUL\"},{\"branchId\":6,\"name\":\"\
+        BAKIRK\xD6Y / \u0130STANBUL\"},{\"branchId\":209,\"name\":\"BANKALAR CADDES\u0130\
+        \ / \u0130STANBUL\"},{\"branchId\":385,\"name\":\"BASIN EXPRES / \u0130STANBUL\"\
+        },{\"branchId\":114,\"name\":\"BA\u015EAKSEH\u0130R / \u0130STANBUL\"},{\"\
+        branchId\":420,\"name\":\"BA\u015EAK\u015EEH\u0130R 2. ETAP / \u0130STANBUL\"\
+        },{\"branchId\":43,\"name\":\"BAYRAMPASA / \u0130STANBUL\"},{\"branchId\"\
+        :63,\"name\":\"BE\u015E\u0130KTAS / \u0130STANBUL\"},{\"branchId\":395,\"\
+        name\":\"BE\u015ETELS\u0130Z / \u0130STANBUL\"},{\"branchId\":20,\"name\"\
+        :\"BE\u015EY\xDCZEVLER / \u0130STANBUL\"},{\"branchId\":39,\"name\":\"BEYAZIT\
+        \ / \u0130STANBUL\"},{\"branchId\":45,\"name\":\"BEYKENT / \u0130STANBUL\"\
+        },{\"branchId\":434,\"name\":\"BEYL\u0130KD\xDCZ\xDC ADNAN KAHVEC\u0130 /\
+        \ \u0130STANBUL\"},{\"branchId\":230,\"name\":\"BEYL\u0130KD\xDCZ\xDC E-5\
+        \ / \u0130STANBUL\"},{\"branchId\":97,\"name\":\"Bireysel Bankac\u0131l\u0131\
+        k\"},{\"branchId\":330,\"name\":\"BOSNA BULVARI / \u0130STANBUL\"},{\"branchId\"\
+        :375,\"name\":\"BOSNA \xC7UKUR\xC7E\u015EME / \u0130STANBUL\"},{\"branchId\"\
+        :176,\"name\":\"BULGURLU / \u0130STANBUL\"},{\"branchId\":172,\"name\":\"\
+        B\xDCY\xDCK\xC7EKMECE / \u0130STANBUL\"},{\"branchId\":58,\"name\":\"CENNET\
+        \ / \u0130STANBUL\"},{\"branchId\":199,\"name\":\"CEV\u0130ZL\u0130 / \u0130\
+        STANBUL\"},{\"branchId\":319,\"name\":\"C\u0130HANG\u0130R / \u0130STANBUL\"\
+        },{\"branchId\":69,\"name\":\"\xC7A\u011ELAYAN / \u0130STANBUL\"},{\"branchId\"\
+        :316,\"name\":\"\xC7ALI\u015ELAR CADDES\u0130 / \u0130STANBUL\"},{\"branchId\"\
+        :234,\"name\":\"\xC7EKMEK\xD6Y / \u0130STANBUL\"},{\"branchId\":305,\"name\"\
+        :\"\xC7EL\u0130KTEPE / \u0130STANBUL\"},{\"branchId\":412,\"name\":\"\xC7\
+        EMENZAR / \u0130STANBUL\"},{\"branchId\":235,\"name\":\"\xC7\u0130FTL\u0130\
+        K - BA\u011ECILAR / \u0130STANBUL\"},{\"branchId\":357,\"name\":\"DA\u011E\
+        YOLU / \u0130STANBUL\"},{\"branchId\":406,\"name\":\"DES SANAY\u0130 \u015E\
+        UBES\u0130\"},{\"branchId\":392,\"name\":\"DUDULLU / \u0130STANBUL\"},{\"\
+        branchId\":148,\"name\":\"EM\u0130N\xD6N\xDC / \u0130STANBUL\"},{\"branchId\"\
+        :53,\"name\":\"ERENK\xD6Y / \u0130STANBUL\"},{\"branchId\":84,\"name\":\"\
+        ESENLER / \u0130STANBUL\"},{\"branchId\":142,\"name\":\"ESENTEPE KURUMSAL\
+        \ / \u0130STANBUL\"},{\"branchId\":320,\"name\":\"ESENYALI / \u0130STANBUL\"\
+        },{\"branchId\":286,\"name\":\"ESENYURT-CUMHUR\u0130YET CADDES\u0130 / \u0130\
+        STANBUL\"},{\"branchId\":143,\"name\":\"ESENYURT / \u0130STANBUL\"},{\"branchId\"\
+        :384,\"name\":\"ESENYURT \xC7AR\u015EI / \u0130STANBUL\"},{\"branchId\":423,\"\
+        name\":\"ESENYURT MEHTER\xC7E\u015EME / \u0130STANBUL\"},{\"branchId\":187,\"\
+        name\":\"EY\xDCP / \u0130STANBUL\"},{\"branchId\":5,\"name\":\"FAT\u0130H\
+        \ / \u0130STANBUL\"},{\"branchId\":369,\"name\":\"FAT\u0130H AKDEN\u0130Z\
+        \ / \u0130STANBUL\"},{\"branchId\":210,\"name\":\"FAT\u0130H \xC7AR\u015E\
+        AMBA / \u0130STANBUL\"},{\"branchId\":358,\"name\":\"FERHATPA\u015EA / \u0130\
+        STANBUL\"},{\"branchId\":362,\"name\":\"FER\u0130K\xD6Y / \u0130STANBUL\"\
+        },{\"branchId\":67,\"name\":\"FINDIKZADE / \u0130STANBUL\"},{\"branchId\"\
+        :185,\"name\":\"F\u0130K\u0130RTEPE / \u0130STANBUL\"},{\"branchId\":243,\"\
+        name\":\"F\u0130RUZK\xD6Y / \u0130STANBUL\"},{\"branchId\":184,\"name\":\"\
+        FLORYA / \u0130STANBUL\"},{\"branchId\":91,\"name\":\"Fon Y\xF6netimi\"},{\"\
+        branchId\":139,\"name\":\"GAZ\u0130OSMANPA\u015EA / \u0130STANBUL\"},{\"branchId\"\
+        :99,\"name\":\"Genel M\xFCd\xFCrl\xFCk\"},{\"branchId\":310,\"name\":\"G\u0130\
+        Y\u0130MKENT / \u0130STANBUL\"},{\"branchId\":411,\"name\":\"G\xD6KT\xDCRK\
+        \ / \u0130STANBUL\"},{\"branchId\":42,\"name\":\"G\xDCLTEPE  / \u0130STANBUL\"\
+        },{\"branchId\":34,\"name\":\"G\xDCNE\u015EL\u0130 / \u0130STANBUL\"},{\"\
+        branchId\":256,\"name\":\"G\xDCNE\u015EL\u0130 \xC7AR\u015EI / \u0130STANBUL\"\
+        },{\"branchId\":127,\"name\":\"G\xDCNG\xD6REN / \u0130STANBUL\"},{\"branchId\"\
+        :309,\"name\":\"G\xDCNG\xD6REN SANAY\u0130 / \u0130STANBUL\"},{\"branchId\"\
+        :89,\"name\":\"HADIMK\xD6Y / \u0130STANBUL\"},{\"branchId\":318,\"name\":\"\
+        HAM\u0130D\u0130YE MAH. / \u0130STANBUL\"},{\"branchId\":119,\"name\":\"HASANPA\u015E\
+        A / \u0130STANBUL\"},{\"branchId\":80,\"name\":\"IHLAMURKUYU / \u0130STANBUL\"\
+        },{\"branchId\":372,\"name\":\"ISPARTAKULE / \u0130STANBUL\"},{\"branchId\"\
+        :109,\"name\":\"\u0130\xC7ERENK\xD6Y / \u0130STANBUL\"},{\"branchId\":391,\"\
+        name\":\"\u0130\xC7ERENK\xD6Y \xC7AR\u015EI / \u0130STANBUL\"},{\"branchId\"\
+        :29,\"name\":\"\u0130K\u0130TELL\u0130 / \u0130STANBUL\"},{\"branchId\":364,\"\
+        name\":\"\u0130K\u0130TELL\u0130 METRO / \u0130STANBUL\"},{\"branchId\":268,\"\
+        name\":\"\u0130K\u0130TELL\u0130 SANAY\u0130 / \u0130STANBUL\"},{\"branchId\"\
+        :17,\"name\":\"\u0130MES / \u0130STANBUL\"},{\"branchId\":104,\"name\":\"\u0130\
+        MSAN \u0130K\u0130TELL\u0130 / \u0130STANBUL\"},{\"branchId\":432,\"name\"\
+        :\"\u0130NC\u0130RL\u0130 CADDES\u0130 / \u0130STANBUL\"},{\"branchId\":341,\"\
+        name\":\"\u0130STANBUL \xD6ZEL BANKACILIK / \u0130STANBUL\"},{\"branchId\"\
+        :238,\"name\":\"\u0130STANBULANADOLU KURUMSAL/\u0130STANBUL\"},{\"branchId\"\
+        :71,\"name\":\"\u0130STO\xC7 / \u0130STANBUL\"},{\"branchId\":4,\"name\":\"\
+        KADIK\xD6Y / \u0130STANBUL\"},{\"branchId\":190,\"name\":\"KA\u011EITHANE\
+        \ / \u0130STANBUL\"},{\"branchId\":141,\"name\":\"KAPALI\xC7ARSI / \u0130\
+        STANBUL\"},{\"branchId\":376,\"name\":\"KARAG\xDCMR\xDCK / \u0130STANBUL\"\
+        },{\"branchId\":52,\"name\":\"KARAK\xD6Y / \u0130STANBUL\"},{\"branchId\"\
+        :272,\"name\":\"KARTAL / \u0130STANBUL\"},{\"branchId\":329,\"name\":\"KASIMPA\u015E\
+        A / \u0130STANBUL\"},{\"branchId\":154,\"name\":\"KAVACIK / \u0130STANBUL\"\
+        },{\"branchId\":371,\"name\":\"KAYA\u015EEH\u0130R / \u0130STANBUL\"},{\"\
+        branchId\":317,\"name\":\"KAYI\u015EDA\u011EI / \u0130STANBUL\"},{\"branchId\"\
+        :118,\"name\":\"KAYNARCA / \u0130STANBUL\"},{\"branchId\":312,\"name\":\"\
+        KAZASKER / \u0130STANBUL\"},{\"branchId\":289,\"name\":\"KIRA\xC7 / \u0130\
+        STANBUL\"},{\"branchId\":169,\"name\":\"KIZTA\u015EI / \u0130STANBUL\"},{\"\
+        branchId\":191,\"name\":\"KOCAMUSTAFAPA\u015EA / \u0130STANBUL\"},{\"branchId\"\
+        :405,\"name\":\"KOCAS\u0130NAN / \u0130STANBUL\"},{\"branchId\":273,\"name\"\
+        :\"KOZYATA\u011EI / \u0130STANBUL\"},{\"branchId\":70,\"name\":\"KURTK\xD6\
+        Y / \u0130STANBUL\"},{\"branchId\":200,\"name\":\"KUYUMCUKENT / \u0130STANBUL\"\
+        },{\"branchId\":288,\"name\":\"K\xDC\xC7\xDCKBAKKALK\xD6Y / \u0130STANBUL\"\
+        },{\"branchId\":233,\"name\":\"K\xDC\xC7\xDCKK\xD6Y / \u0130STANBUL\"},{\"\
+        branchId\":33,\"name\":\"LALEL\u0130 / \u0130STANBUL\"},{\"branchId\":193,\"\
+        name\":\"LALEL\u0130 ORDU CADDES\u0130 / \u0130STANBUL\"},{\"branchId\":214,\"\
+        name\":\"LEVENT - SANAY\u0130 / \u0130STANBUL\"},{\"branchId\":188,\"name\"\
+        :\"MAHMUTBEY YOLU / \u0130STANBUL\"},{\"branchId\":28,\"name\":\"MALTEPE /\
+        \ \u0130STANBUL\"},{\"branchId\":262,\"name\":\"MALTEPE \xC7AR\u015EI / \u0130\
+        STANBUL\"},{\"branchId\":249,\"name\":\"MASLAK / \u0130STANBUL\"},{\"branchId\"\
+        :40,\"name\":\"MEC\u0130DIYEK\xD6Y / \u0130STANBUL\"},{\"branchId\":85,\"\
+        name\":\"MEGACENTER / \u0130STANBUL\"},{\"branchId\":279,\"name\":\"MERCAN\
+        \ / \u0130STANBUL\"},{\"branchId\":1,\"name\":\"MERKEZ / \u0130STANBUL\"},{\"\
+        branchId\":11,\"name\":\"MERTER / \u0130STANBUL\"},{\"branchId\":271,\"name\"\
+        :\"MERTER \xC7AR\u015EI/\u0130STANBUL\"},{\"branchId\":269,\"name\":\"METROKENT/\u0130\
+        STANBUL\"},{\"branchId\":396,\"name\":\"OKMEYDANI / \u0130STANBUL\"},{\"branchId\"\
+        :15,\"name\":\"OSMANBEY / \u0130STANBUL\"},{\"branchId\":397,\"name\":\"\xD6\
+        RNEK MAHALLES\u0130 / \u0130STANBUL\"},{\"branchId\":418,\"name\":\"PA\u015E\
+        ABAH\xC7E / \u0130STANBUL\"},{\"branchId\":378,\"name\":\"PEND\u0130K- YEN\u0130\
+        \u015EEH\u0130R / \u0130STANBUL\"},{\"branchId\":8,\"name\":\"PEND\u0130K\
+        \ / \u0130STANBUL\"},{\"branchId\":153,\"name\":\"Pendik E-5 / \u0130STANBUL\"\
+        },{\"branchId\":239,\"name\":\"PERPA/\u0130STANBUL\"},{\"branchId\":212,\"\
+        name\":\"SAMANDIRA / \u0130STANBUL\"},{\"branchId\":134,\"name\":\"SANCAKTEPE\
+        \ / \u0130STANBUL\"},{\"branchId\":215,\"name\":\"SARIYER / \u0130STANBUL\"\
+        },{\"branchId\":225,\"name\":\"SEFAK\xD6Y / \u0130STANBUL\"},{\"branchId\"\
+        :173,\"name\":\"SEY\u0130TN\u0130ZAM / \u0130STANBUL\"},{\"branchId\":324,\"\
+        name\":\"S\u0130L\u0130VR\u0130 / \u0130STANBUL\"},{\"branchId\":2,\"name\"\
+        :\"S\u0130RKEC\u0130 / \u0130STANBUL\"},{\"branchId\":350,\"name\":\"S\u0130\
+        YAVU\u015EPA\u015EA / \u0130STANBUL\"},{\"branchId\":196,\"name\":\"SO\u011E\
+        ANLIK / \u0130STANBUL\"},{\"branchId\":86,\"name\":\"SULTANBEYL\u0130 / \u0130\
+        STANBUL\"},{\"branchId\":296,\"name\":\"SULTANBEYL\u0130 TEM / \u0130STANBUL\"\
+        },{\"branchId\":117,\"name\":\"SULTAN\xC7\u0130FL\u0130G\u0130 / \u0130STANBUL\"\
+        },{\"branchId\":417,\"name\":\"S\xDCTC\xDC \u0130MAM CADDES\u0130 / \u0130\
+        STANBUL\"},{\"branchId\":414,\"name\":\"\u015EEHREM\u0130N\u0130 / \u0130\
+        STANBUL\"},{\"branchId\":393,\"name\":\"\u015EER\u0130FAL\u0130 / \u0130STANBUL\"\
+        },{\"branchId\":72,\"name\":\"\u015E\u0130R\u0130NEVLER / \u0130STANBUL\"\
+        },{\"branchId\":131,\"name\":\"\u015E\u0130\u015EL\u0130 / \u0130STANBUL\"\
+        },{\"branchId\":174,\"name\":\"TAHTAKALE / \u0130STANBUL\"},{\"branchId\"\
+        :41,\"name\":\"TAKS\u0130M / \u0130STANBUL\"},{\"branchId\":248,\"name\":\"\
+        TA\u015EDELEN / \u0130STANBUL\"},{\"branchId\":171,\"name\":\"TAVUKCUYOLU\
+        \ / \u0130STANBUL\"},{\"branchId\":314,\"name\":\"TELS\u0130Z / \u0130STANBUL\"\
+        },{\"branchId\":36,\"name\":\"TERAZ\u0130DERE / \u0130STANBUL\"},{\"branchId\"\
+        :27,\"name\":\"TOP\xC7ULAR / \u0130STANBUL\"},{\"branchId\":106,\"name\":\"\
+        TOPKAPI / \u0130STANBUL\"},{\"branchId\":261,\"name\":\"TUZLA \u0130\xC7MELER\
+        \ /\u0130STANBUL\"},{\"branchId\":386,\"name\":\"TUZLA OSB / \u0130STANBUL\"\
+        },{\"branchId\":82,\"name\":\"TUZLA SANAY\u0130 / \u0130STANBUL\"},{\"branchId\"\
+        :260,\"name\":\"T\xDCMSAN SANAY\u0130 / \u0130STANBUL\"},{\"branchId\":339,\"\
+        name\":\"ULUYOL CADDES\u0130 / \u0130STANBUL\"},{\"branchId\":331,\"name\"\
+        :\"\xDC\xC7Y\xDCZL\xDC / \u0130STANBUL\"},{\"branchId\":49,\"name\":\"\xDC\
+        MRAN\u0130YE / \u0130STANBUL\"},{\"branchId\":301,\"name\":\"\xDCMRAN\u0130\
+        YE SANTRAL / \u0130STANBUL\"},{\"branchId\":374,\"name\":\"\xDCNALAN / \u0130\
+        STANBUL\"},{\"branchId\":24,\"name\":\"\xDCSK\xDCDAR / \u0130STANBUL\"},{\"\
+        branchId\":403,\"name\":\"YAKUPLU / \u0130STANBUL\"},{\"branchId\":112,\"\
+        name\":\"YEN\u0130BOSNA / \u0130STANBUL\"},{\"branchId\":267,\"name\":\"YE\u015E\
+        \u0130LPINAR/\u0130STANBUL\"},{\"branchId\":373,\"name\":\"YE\u015E\u0130\
+        LTEPE \\\\ \u0130STANBUL\"},{\"branchId\":366,\"name\":\"YILDIZTABYA / \u0130\
+        STANBUL\"},{\"branchId\":206,\"name\":\"YILDIZTEPE / \u0130STANBUL\"},{\"\
+        branchId\":323,\"name\":\"Y\xDCZYIL / \u0130STANBUL\"},{\"branchId\":38,\"\
+        name\":\"ZEYT\u0130NBURNU / \u0130STANBUL\"},{\"branchId\":346,\"name\":\"\
+        ZEYT\u0130NBURNU \xC7AR\u015EI / \u0130STANBUL\"},{\"branchId\":410,\"name\"\
+        :\"Z\xFCmr\xFCtevler \u015Eubesi\"}],\"success\":true,\"results\":[]}"
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 04 May 2019 14:04:31 GMT
+      Set-Cookie:
+      - TS01dea925=01334097cb936fe2685c15b5ae0a95606e0f6cddd01f384814cfc0be87b61703cdaeba6247fc7637db76a5aa422ce4ec8a2642f18b;
+        Path=/; Secure; HTTPOnly
+      Strict-Transport-Security:
+      - max-age=15552000
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"bankId": 205, "cityId": 34}'
+    headers:
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/json
+      Signature:
+      - !!binary |
+        SnZhcVJJRzA5Z3h0TUQzVVZCT3o2VmNrTmZUSmREcVpWdi94V3lyWVFwbHRVaUt3NFp1MlBLVlBy
+        S0dVVU92UEpwQVMxamFFS3pMZzVZQWducURaQW5OT1FIN1QxZ1JWck42dFpaWkFoTlVucktzRzJW
+        UHkrZ2NNaGJmVkc1aTFzWVJ1c2U2Q2gzUUdlOCtWZm9pZno5UWF1a082OG1lQmFmWHN3eUtLNmo4
+        PQ==
+    method: GET
+    uri: https://apitest.kuveytturk.com.tr/prep/v1/data/banks/205/branches?cityId=34
+  response:
+    body:
+      string: "{\"value\":[{\"branchId\":387,\"name\":\"50. YIL / \u0130STANBUL\"\
+        },{\"branchId\":382,\"name\":\"ACIBADEM / \u0130STANBUL\"},{\"branchId\":352,\"\
+        name\":\"AHMED YESEV\u0130 / \u0130STANBUL\"},{\"branchId\":416,\"name\":\"\
+        AKSARAY METRO / \u0130STANBUL\"},{\"branchId\":361,\"name\":\"AL\u0130BEYK\xD6\
+        Y / \u0130STANBUL\"},{\"branchId\":147,\"name\":\"ALTINTEPE / \u0130STANBUL\"\
+        },{\"branchId\":54,\"name\":\"ALTUN\u0130ZADE / \u0130STANBUL\"},{\"branchId\"\
+        :322,\"name\":\"ARNAVUTK\xD6Y / \u0130STANBUL\"},{\"branchId\":321,\"name\"\
+        :\"ATAKENT / \u0130STANBUL\"},{\"branchId\":297,\"name\":\"ATI\u015EALANI\
+        \ / \u0130STANBUL\"},{\"branchId\":77,\"name\":\"AVCILAR / \u0130STANBUL\"\
+        },{\"branchId\":46,\"name\":\"BA\u011ECILAR / \u0130STANBUL\"},{\"branchId\"\
+        :62,\"name\":\"BAHCEL\u0130EVLER / \u0130STANBUL\"},{\"branchId\":132,\"name\"\
+        :\"BAH\xC7E\u015EEH\u0130R / \u0130STANBUL\"},{\"branchId\":6,\"name\":\"\
+        BAKIRK\xD6Y / \u0130STANBUL\"},{\"branchId\":209,\"name\":\"BANKALAR CADDES\u0130\
+        \ / \u0130STANBUL\"},{\"branchId\":385,\"name\":\"BASIN EXPRES / \u0130STANBUL\"\
+        },{\"branchId\":114,\"name\":\"BA\u015EAKSEH\u0130R / \u0130STANBUL\"},{\"\
+        branchId\":420,\"name\":\"BA\u015EAK\u015EEH\u0130R 2. ETAP / \u0130STANBUL\"\
+        },{\"branchId\":43,\"name\":\"BAYRAMPASA / \u0130STANBUL\"},{\"branchId\"\
+        :63,\"name\":\"BE\u015E\u0130KTAS / \u0130STANBUL\"},{\"branchId\":395,\"\
+        name\":\"BE\u015ETELS\u0130Z / \u0130STANBUL\"},{\"branchId\":20,\"name\"\
+        :\"BE\u015EY\xDCZEVLER / \u0130STANBUL\"},{\"branchId\":39,\"name\":\"BEYAZIT\
+        \ / \u0130STANBUL\"},{\"branchId\":45,\"name\":\"BEYKENT / \u0130STANBUL\"\
+        },{\"branchId\":434,\"name\":\"BEYL\u0130KD\xDCZ\xDC ADNAN KAHVEC\u0130 /\
+        \ \u0130STANBUL\"},{\"branchId\":230,\"name\":\"BEYL\u0130KD\xDCZ\xDC E-5\
+        \ / \u0130STANBUL\"},{\"branchId\":97,\"name\":\"Bireysel Bankac\u0131l\u0131\
+        k\"},{\"branchId\":330,\"name\":\"BOSNA BULVARI / \u0130STANBUL\"},{\"branchId\"\
+        :375,\"name\":\"BOSNA \xC7UKUR\xC7E\u015EME / \u0130STANBUL\"},{\"branchId\"\
+        :176,\"name\":\"BULGURLU / \u0130STANBUL\"},{\"branchId\":172,\"name\":\"\
+        B\xDCY\xDCK\xC7EKMECE / \u0130STANBUL\"},{\"branchId\":58,\"name\":\"CENNET\
+        \ / \u0130STANBUL\"},{\"branchId\":199,\"name\":\"CEV\u0130ZL\u0130 / \u0130\
+        STANBUL\"},{\"branchId\":319,\"name\":\"C\u0130HANG\u0130R / \u0130STANBUL\"\
+        },{\"branchId\":69,\"name\":\"\xC7A\u011ELAYAN / \u0130STANBUL\"},{\"branchId\"\
+        :316,\"name\":\"\xC7ALI\u015ELAR CADDES\u0130 / \u0130STANBUL\"},{\"branchId\"\
+        :234,\"name\":\"\xC7EKMEK\xD6Y / \u0130STANBUL\"},{\"branchId\":305,\"name\"\
+        :\"\xC7EL\u0130KTEPE / \u0130STANBUL\"},{\"branchId\":412,\"name\":\"\xC7\
+        EMENZAR / \u0130STANBUL\"},{\"branchId\":235,\"name\":\"\xC7\u0130FTL\u0130\
+        K - BA\u011ECILAR / \u0130STANBUL\"},{\"branchId\":357,\"name\":\"DA\u011E\
+        YOLU / \u0130STANBUL\"},{\"branchId\":406,\"name\":\"DES SANAY\u0130 \u015E\
+        UBES\u0130\"},{\"branchId\":392,\"name\":\"DUDULLU / \u0130STANBUL\"},{\"\
+        branchId\":148,\"name\":\"EM\u0130N\xD6N\xDC / \u0130STANBUL\"},{\"branchId\"\
+        :53,\"name\":\"ERENK\xD6Y / \u0130STANBUL\"},{\"branchId\":84,\"name\":\"\
+        ESENLER / \u0130STANBUL\"},{\"branchId\":142,\"name\":\"ESENTEPE KURUMSAL\
+        \ / \u0130STANBUL\"},{\"branchId\":320,\"name\":\"ESENYALI / \u0130STANBUL\"\
+        },{\"branchId\":286,\"name\":\"ESENYURT-CUMHUR\u0130YET CADDES\u0130 / \u0130\
+        STANBUL\"},{\"branchId\":143,\"name\":\"ESENYURT / \u0130STANBUL\"},{\"branchId\"\
+        :384,\"name\":\"ESENYURT \xC7AR\u015EI / \u0130STANBUL\"},{\"branchId\":423,\"\
+        name\":\"ESENYURT MEHTER\xC7E\u015EME / \u0130STANBUL\"},{\"branchId\":187,\"\
+        name\":\"EY\xDCP / \u0130STANBUL\"},{\"branchId\":5,\"name\":\"FAT\u0130H\
+        \ / \u0130STANBUL\"},{\"branchId\":369,\"name\":\"FAT\u0130H AKDEN\u0130Z\
+        \ / \u0130STANBUL\"},{\"branchId\":210,\"name\":\"FAT\u0130H \xC7AR\u015E\
+        AMBA / \u0130STANBUL\"},{\"branchId\":358,\"name\":\"FERHATPA\u015EA / \u0130\
+        STANBUL\"},{\"branchId\":362,\"name\":\"FER\u0130K\xD6Y / \u0130STANBUL\"\
+        },{\"branchId\":67,\"name\":\"FINDIKZADE / \u0130STANBUL\"},{\"branchId\"\
+        :185,\"name\":\"F\u0130K\u0130RTEPE / \u0130STANBUL\"},{\"branchId\":243,\"\
+        name\":\"F\u0130RUZK\xD6Y / \u0130STANBUL\"},{\"branchId\":184,\"name\":\"\
+        FLORYA / \u0130STANBUL\"},{\"branchId\":91,\"name\":\"Fon Y\xF6netimi\"},{\"\
+        branchId\":139,\"name\":\"GAZ\u0130OSMANPA\u015EA / \u0130STANBUL\"},{\"branchId\"\
+        :99,\"name\":\"Genel M\xFCd\xFCrl\xFCk\"},{\"branchId\":310,\"name\":\"G\u0130\
+        Y\u0130MKENT / \u0130STANBUL\"},{\"branchId\":411,\"name\":\"G\xD6KT\xDCRK\
+        \ / \u0130STANBUL\"},{\"branchId\":42,\"name\":\"G\xDCLTEPE  / \u0130STANBUL\"\
+        },{\"branchId\":34,\"name\":\"G\xDCNE\u015EL\u0130 / \u0130STANBUL\"},{\"\
+        branchId\":256,\"name\":\"G\xDCNE\u015EL\u0130 \xC7AR\u015EI / \u0130STANBUL\"\
+        },{\"branchId\":127,\"name\":\"G\xDCNG\xD6REN / \u0130STANBUL\"},{\"branchId\"\
+        :309,\"name\":\"G\xDCNG\xD6REN SANAY\u0130 / \u0130STANBUL\"},{\"branchId\"\
+        :89,\"name\":\"HADIMK\xD6Y / \u0130STANBUL\"},{\"branchId\":318,\"name\":\"\
+        HAM\u0130D\u0130YE MAH. / \u0130STANBUL\"},{\"branchId\":119,\"name\":\"HASANPA\u015E\
+        A / \u0130STANBUL\"},{\"branchId\":80,\"name\":\"IHLAMURKUYU / \u0130STANBUL\"\
+        },{\"branchId\":372,\"name\":\"ISPARTAKULE / \u0130STANBUL\"},{\"branchId\"\
+        :109,\"name\":\"\u0130\xC7ERENK\xD6Y / \u0130STANBUL\"},{\"branchId\":391,\"\
+        name\":\"\u0130\xC7ERENK\xD6Y \xC7AR\u015EI / \u0130STANBUL\"},{\"branchId\"\
+        :29,\"name\":\"\u0130K\u0130TELL\u0130 / \u0130STANBUL\"},{\"branchId\":364,\"\
+        name\":\"\u0130K\u0130TELL\u0130 METRO / \u0130STANBUL\"},{\"branchId\":268,\"\
+        name\":\"\u0130K\u0130TELL\u0130 SANAY\u0130 / \u0130STANBUL\"},{\"branchId\"\
+        :17,\"name\":\"\u0130MES / \u0130STANBUL\"},{\"branchId\":104,\"name\":\"\u0130\
+        MSAN \u0130K\u0130TELL\u0130 / \u0130STANBUL\"},{\"branchId\":432,\"name\"\
+        :\"\u0130NC\u0130RL\u0130 CADDES\u0130 / \u0130STANBUL\"},{\"branchId\":341,\"\
+        name\":\"\u0130STANBUL \xD6ZEL BANKACILIK / \u0130STANBUL\"},{\"branchId\"\
+        :238,\"name\":\"\u0130STANBULANADOLU KURUMSAL/\u0130STANBUL\"},{\"branchId\"\
+        :71,\"name\":\"\u0130STO\xC7 / \u0130STANBUL\"},{\"branchId\":4,\"name\":\"\
+        KADIK\xD6Y / \u0130STANBUL\"},{\"branchId\":190,\"name\":\"KA\u011EITHANE\
+        \ / \u0130STANBUL\"},{\"branchId\":141,\"name\":\"KAPALI\xC7ARSI / \u0130\
+        STANBUL\"},{\"branchId\":376,\"name\":\"KARAG\xDCMR\xDCK / \u0130STANBUL\"\
+        },{\"branchId\":52,\"name\":\"KARAK\xD6Y / \u0130STANBUL\"},{\"branchId\"\
+        :272,\"name\":\"KARTAL / \u0130STANBUL\"},{\"branchId\":329,\"name\":\"KASIMPA\u015E\
+        A / \u0130STANBUL\"},{\"branchId\":154,\"name\":\"KAVACIK / \u0130STANBUL\"\
+        },{\"branchId\":371,\"name\":\"KAYA\u015EEH\u0130R / \u0130STANBUL\"},{\"\
+        branchId\":317,\"name\":\"KAYI\u015EDA\u011EI / \u0130STANBUL\"},{\"branchId\"\
+        :118,\"name\":\"KAYNARCA / \u0130STANBUL\"},{\"branchId\":312,\"name\":\"\
+        KAZASKER / \u0130STANBUL\"},{\"branchId\":289,\"name\":\"KIRA\xC7 / \u0130\
+        STANBUL\"},{\"branchId\":169,\"name\":\"KIZTA\u015EI / \u0130STANBUL\"},{\"\
+        branchId\":191,\"name\":\"KOCAMUSTAFAPA\u015EA / \u0130STANBUL\"},{\"branchId\"\
+        :405,\"name\":\"KOCAS\u0130NAN / \u0130STANBUL\"},{\"branchId\":273,\"name\"\
+        :\"KOZYATA\u011EI / \u0130STANBUL\"},{\"branchId\":70,\"name\":\"KURTK\xD6\
+        Y / \u0130STANBUL\"},{\"branchId\":200,\"name\":\"KUYUMCUKENT / \u0130STANBUL\"\
+        },{\"branchId\":288,\"name\":\"K\xDC\xC7\xDCKBAKKALK\xD6Y / \u0130STANBUL\"\
+        },{\"branchId\":233,\"name\":\"K\xDC\xC7\xDCKK\xD6Y / \u0130STANBUL\"},{\"\
+        branchId\":33,\"name\":\"LALEL\u0130 / \u0130STANBUL\"},{\"branchId\":193,\"\
+        name\":\"LALEL\u0130 ORDU CADDES\u0130 / \u0130STANBUL\"},{\"branchId\":214,\"\
+        name\":\"LEVENT - SANAY\u0130 / \u0130STANBUL\"},{\"branchId\":188,\"name\"\
+        :\"MAHMUTBEY YOLU / \u0130STANBUL\"},{\"branchId\":28,\"name\":\"MALTEPE /\
+        \ \u0130STANBUL\"},{\"branchId\":262,\"name\":\"MALTEPE \xC7AR\u015EI / \u0130\
+        STANBUL\"},{\"branchId\":249,\"name\":\"MASLAK / \u0130STANBUL\"},{\"branchId\"\
+        :40,\"name\":\"MEC\u0130DIYEK\xD6Y / \u0130STANBUL\"},{\"branchId\":85,\"\
+        name\":\"MEGACENTER / \u0130STANBUL\"},{\"branchId\":279,\"name\":\"MERCAN\
+        \ / \u0130STANBUL\"},{\"branchId\":1,\"name\":\"MERKEZ / \u0130STANBUL\"},{\"\
+        branchId\":11,\"name\":\"MERTER / \u0130STANBUL\"},{\"branchId\":271,\"name\"\
+        :\"MERTER \xC7AR\u015EI/\u0130STANBUL\"},{\"branchId\":269,\"name\":\"METROKENT/\u0130\
+        STANBUL\"},{\"branchId\":396,\"name\":\"OKMEYDANI / \u0130STANBUL\"},{\"branchId\"\
+        :15,\"name\":\"OSMANBEY / \u0130STANBUL\"},{\"branchId\":397,\"name\":\"\xD6\
+        RNEK MAHALLES\u0130 / \u0130STANBUL\"},{\"branchId\":418,\"name\":\"PA\u015E\
+        ABAH\xC7E / \u0130STANBUL\"},{\"branchId\":378,\"name\":\"PEND\u0130K- YEN\u0130\
+        \u015EEH\u0130R / \u0130STANBUL\"},{\"branchId\":8,\"name\":\"PEND\u0130K\
+        \ / \u0130STANBUL\"},{\"branchId\":153,\"name\":\"Pendik E-5 / \u0130STANBUL\"\
+        },{\"branchId\":239,\"name\":\"PERPA/\u0130STANBUL\"},{\"branchId\":212,\"\
+        name\":\"SAMANDIRA / \u0130STANBUL\"},{\"branchId\":134,\"name\":\"SANCAKTEPE\
+        \ / \u0130STANBUL\"},{\"branchId\":215,\"name\":\"SARIYER / \u0130STANBUL\"\
+        },{\"branchId\":225,\"name\":\"SEFAK\xD6Y / \u0130STANBUL\"},{\"branchId\"\
+        :173,\"name\":\"SEY\u0130TN\u0130ZAM / \u0130STANBUL\"},{\"branchId\":324,\"\
+        name\":\"S\u0130L\u0130VR\u0130 / \u0130STANBUL\"},{\"branchId\":2,\"name\"\
+        :\"S\u0130RKEC\u0130 / \u0130STANBUL\"},{\"branchId\":350,\"name\":\"S\u0130\
+        YAVU\u015EPA\u015EA / \u0130STANBUL\"},{\"branchId\":196,\"name\":\"SO\u011E\
+        ANLIK / \u0130STANBUL\"},{\"branchId\":86,\"name\":\"SULTANBEYL\u0130 / \u0130\
+        STANBUL\"},{\"branchId\":296,\"name\":\"SULTANBEYL\u0130 TEM / \u0130STANBUL\"\
+        },{\"branchId\":117,\"name\":\"SULTAN\xC7\u0130FL\u0130G\u0130 / \u0130STANBUL\"\
+        },{\"branchId\":417,\"name\":\"S\xDCTC\xDC \u0130MAM CADDES\u0130 / \u0130\
+        STANBUL\"},{\"branchId\":414,\"name\":\"\u015EEHREM\u0130N\u0130 / \u0130\
+        STANBUL\"},{\"branchId\":393,\"name\":\"\u015EER\u0130FAL\u0130 / \u0130STANBUL\"\
+        },{\"branchId\":72,\"name\":\"\u015E\u0130R\u0130NEVLER / \u0130STANBUL\"\
+        },{\"branchId\":131,\"name\":\"\u015E\u0130\u015EL\u0130 / \u0130STANBUL\"\
+        },{\"branchId\":174,\"name\":\"TAHTAKALE / \u0130STANBUL\"},{\"branchId\"\
+        :41,\"name\":\"TAKS\u0130M / \u0130STANBUL\"},{\"branchId\":248,\"name\":\"\
+        TA\u015EDELEN / \u0130STANBUL\"},{\"branchId\":171,\"name\":\"TAVUKCUYOLU\
+        \ / \u0130STANBUL\"},{\"branchId\":314,\"name\":\"TELS\u0130Z / \u0130STANBUL\"\
+        },{\"branchId\":36,\"name\":\"TERAZ\u0130DERE / \u0130STANBUL\"},{\"branchId\"\
+        :27,\"name\":\"TOP\xC7ULAR / \u0130STANBUL\"},{\"branchId\":106,\"name\":\"\
+        TOPKAPI / \u0130STANBUL\"},{\"branchId\":261,\"name\":\"TUZLA \u0130\xC7MELER\
+        \ /\u0130STANBUL\"},{\"branchId\":386,\"name\":\"TUZLA OSB / \u0130STANBUL\"\
+        },{\"branchId\":82,\"name\":\"TUZLA SANAY\u0130 / \u0130STANBUL\"},{\"branchId\"\
+        :260,\"name\":\"T\xDCMSAN SANAY\u0130 / \u0130STANBUL\"},{\"branchId\":339,\"\
+        name\":\"ULUYOL CADDES\u0130 / \u0130STANBUL\"},{\"branchId\":331,\"name\"\
+        :\"\xDC\xC7Y\xDCZL\xDC / \u0130STANBUL\"},{\"branchId\":49,\"name\":\"\xDC\
+        MRAN\u0130YE / \u0130STANBUL\"},{\"branchId\":301,\"name\":\"\xDCMRAN\u0130\
+        YE SANTRAL / \u0130STANBUL\"},{\"branchId\":374,\"name\":\"\xDCNALAN / \u0130\
+        STANBUL\"},{\"branchId\":24,\"name\":\"\xDCSK\xDCDAR / \u0130STANBUL\"},{\"\
+        branchId\":403,\"name\":\"YAKUPLU / \u0130STANBUL\"},{\"branchId\":112,\"\
+        name\":\"YEN\u0130BOSNA / \u0130STANBUL\"},{\"branchId\":267,\"name\":\"YE\u015E\
+        \u0130LPINAR/\u0130STANBUL\"},{\"branchId\":373,\"name\":\"YE\u015E\u0130\
+        LTEPE \\\\ \u0130STANBUL\"},{\"branchId\":366,\"name\":\"YILDIZTABYA / \u0130\
+        STANBUL\"},{\"branchId\":206,\"name\":\"YILDIZTEPE / \u0130STANBUL\"},{\"\
+        branchId\":323,\"name\":\"Y\xDCZYIL / \u0130STANBUL\"},{\"branchId\":38,\"\
+        name\":\"ZEYT\u0130NBURNU / \u0130STANBUL\"},{\"branchId\":346,\"name\":\"\
+        ZEYT\u0130NBURNU \xC7AR\u015EI / \u0130STANBUL\"},{\"branchId\":410,\"name\"\
+        :\"Z\xFCmr\xFCtevler \u015Eubesi\"}],\"success\":true,\"results\":[]}"
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 04 May 2019 14:04:32 GMT
+      Set-Cookie:
+      - TS01dea925=01334097cb64640c2458190ef27f976f76616dcce2afe6fcf40b1ebe41a1193748cc3b933f9e2bf287473278262eff33817563cd03;
+        Path=/; Secure; HTTPOnly
+      Strict-Transport-Security:
+      - max-age=15552000
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+version: 1
